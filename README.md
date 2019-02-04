@@ -12,6 +12,7 @@ To optimize students' time and help them register more smoothly for courses, thi
 ### Components
 
 * [Web App](./web-app)
+* [Data Scraping and Alerts](./data-scraping)
 
 ### Design
 
