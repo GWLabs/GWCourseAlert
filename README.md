@@ -9,11 +9,9 @@ To optimize students' time and help them register more smoothly for courses, thi
 3. Pull course catalog for alerts every hour
 4. Recommendations for other classes when one becomes full
 
-### Useful Links
+### Components
 
-* Web App
-  * [Flask Docs](http://flask.pocoo.org/docs/1.0/)
-  * [Quick Flask Guide](https://medium.freecodecamp.org/how-to-build-a-web-application-using-flask-and-deploy-it-to-the-cloud-3551c985e492)
+* [Web App](./web-app)
 
 ### Design
 
