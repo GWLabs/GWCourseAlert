@@ -1,15 +1,17 @@
 /*conatins all classes, unsure if i need to make id for example: INT(10) UNSIGNED or if int is fine*/ 
 
-/*for alert requests, has emails, id, CRN.*/
+/*DROP TABLE IF EXISTS request, classes;*/
+
 CREATE TABLE request(
-	id int,
+	id int NOT NULL AUTO_INCREMENT,
 	email varchar(50),
 	crn int,
 	primary key (id)
 );
 
+/*for alert requests, has emails, id, CRN.*/
 CREATE TABLE classes(
-	id int,
+	id int NOT NULL AUTO_INCREMENT,
 	crn int,
 	term varchar(50),
 	name varchar(75),
