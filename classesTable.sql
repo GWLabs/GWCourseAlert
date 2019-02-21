@@ -1,6 +1,6 @@
 /*conatins all classes, unsure if i need to make id for example: INT(10) UNSIGNED or if int is fine*/ 
 
-/*DROP TABLE IF EXISTS request, classes;*/
+DROP TABLE IF EXISTS request, classes;
 
 CREATE TABLE request(
 	id int NOT NULL AUTO_INCREMENT,
