@@ -9,7 +9,7 @@ To optimize students' time and help them register more smoothly for courses, thi
 3. Pull course catalog for alerts every hour
 4. Recommendations for other classes when one becomes full
 
-### Components
+### Components & Getting Started!
 
 * [Web App](./web-app)
 * [Data Scraping and Alerts](./data-scraping)
