@@ -14,3 +14,12 @@ def get_database_connection():
         request_data.__database = db
 
     return db
+
+def create_database_tables():
+    # connect to the database
+    db_connection = get_database_connection()
+
+    # open the schema file, read it, and run the statements on the database
+    with open('../classesTable.sql', 'r+') as schemaFile:
+        schemaFileContents = schemaFile.read().decode('utf-8')
+        db_connection.executescript(schemaFileContents)
