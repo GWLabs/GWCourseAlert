@@ -20,6 +20,6 @@ def create_database_tables():
     db_connection = get_database_connection()
 
     # open the schema file, read it, and run the statements on the database
-    with open('../classesTable.sql', 'r+') as schemaFile:
+    with open('../databaseTables.sql', 'r+') as schemaFile:
         schemaFileContents = schemaFile.read()
         db_connection.executescript(schemaFileContents)
