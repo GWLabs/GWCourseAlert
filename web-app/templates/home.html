@@ -6,9 +6,11 @@
   </head>
   <body>
     <h1>GW Course Alert</h1>
-    <form>
-    	Email: <input type = "text"> <br>
-    	CRNs: <textarea name="message" style="width:200px; height:50px" class=""> </textarea> <br>
+    <form method="POST" action="/create-request">
+    	Email: <input type="email" name="emailAddress"> <br>
+    	CRNs: <textarea name="crns" style="width:200px; height:50px"></textarea>
+      <br/>
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>

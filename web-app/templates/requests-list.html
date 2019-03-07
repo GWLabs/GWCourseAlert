@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="urf-utf-8">
+    <title>GW Course Alert</title>
+  </head>
+  <body>
+    <h1>All Requests</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>CRN</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for request in data %}
+        <tr>
+          <td>{{ request[1] }}</td>
+          <td>{{ request[2] }}</td>          
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
