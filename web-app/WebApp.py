@@ -50,7 +50,7 @@ def getAllRequests():
 
     #print(results)
     #cursor.close()
-    return render_template('home.html')
+    return render_template('requests-list.html', data=rows)
 
 """
 def query_db(query, args=(), one=False):
