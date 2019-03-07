@@ -29,10 +29,10 @@ def createRequest():
         connection = db.get_database_connection()
         #connection.autocommit = True
         cursor = connection.cursor()
-        cursor.execute("INSERT INTO requests (id,email,crn) VALUES (?,?,?)",(None,emailAddress,crn))
+        cursor.execute("INSERT INTO requests (email,crn) VALUES (?,?)",(emailAddress,crn))
         print(cursor.lastrowid)
         connection.commit()
-        
+
         print("added")
 
     return render_template('home.html')
