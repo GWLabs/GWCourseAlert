@@ -15,7 +15,17 @@ def home():
 def createRequest():
     # extract the email address and comma separated list of CRNs from request
     emailAddress = request.form['emailAddress']
-    crns = request.form['CRNs']
+    commaSeparatedCRNs = request.form['crns']
+
+    # listOfCRNs is now an array of CRNs, each represented as a string
+    listOfCRNs = commaSeparatedCRNs.split(',')
+
+    # for each CRN string, create a new request
+    for crnString in listOfCRNs:
+        # parse the string CRN to an int
+        crn = int(crnString)
+        print(emailAddress, crn)
+        pass
 
     return render_template('home.html')
 
