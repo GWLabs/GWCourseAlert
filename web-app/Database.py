@@ -15,6 +15,13 @@ def get_database_connection():
 
     return db
 
+def close_database_connection(ignoredParameter):
+    # get the database connection from the request data, if one exists
+    db = getattr(request_data, '__database', None)
+    # if the connection exists, close it
+    if db is not None:
+        db.close()
+
 def create_database_tables():
     # connect to the database
     db_connection = get_database_connection()
