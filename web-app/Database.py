@@ -21,5 +21,5 @@ def create_database_tables():
 
     # open the schema file, read it, and run the statements on the database
     with open('../classesTable.sql', 'r+') as schemaFile:
-        schemaFileContents = schemaFile.read().decode('utf-8')
+        schemaFileContents = schemaFile.read()
         db_connection.executescript(schemaFileContents)
