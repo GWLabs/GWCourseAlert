@@ -1,10 +1,9 @@
 DROP TABLE IF EXISTS requests;
 
 CREATE TABLE requests (
-	id SERIAL NOT NULL,
+	id INT PRIMARY KEY,
 	email varchar(50),
-	crn int,
-	primary key (id)
+	crn int	
 );
 
 DROP TABLE IF EXISTS classes;
